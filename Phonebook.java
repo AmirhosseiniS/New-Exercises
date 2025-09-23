@@ -86,6 +86,8 @@ public class Phonebook {
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
+                    else {
+                    System.out.println("The number is not saved in the Phonebook.");
                 }
                 displayMenu();
             }
