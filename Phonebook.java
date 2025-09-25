@@ -55,8 +55,8 @@ public class Phonebook {
                     String contactLastName = scanner.nextLine();
                     System.out.println("Enter the E-mail address:");
                     String emailAddress = scanner.nextLine();
-                    String contact = contactNumber + "," + contactFirstName +
-                            " " + contactLastName + "," + emailAddress;
+                    String contact = contactNumber + ", " + contactFirstName +
+                            " " + contactLastName + ", " + emailAddress;
                     addContact(contactNumber, contact);
                     displayMenu();
                 }
@@ -87,8 +87,8 @@ public class Phonebook {
                     String contactLastName = scanner.nextLine();
                     System.out.println("Enter the new E-mail address:");
                     String emailAddress = scanner.nextLine();
-                    String contact = contactNumber + "," + contactFirstName +
-                            " " + contactLastName + "," + emailAddress;
+                    String contact = contactNumber + ", " + contactFirstName +
+                            " " + contactLastName + ", " + emailAddress;
                     try {
                         removeLineFromFile(phoneBookFile, String.valueOf(contactNumber));
                         addContact(contactNumber, ("\n" + contact));
